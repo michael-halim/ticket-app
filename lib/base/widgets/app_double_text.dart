@@ -6,7 +6,7 @@ import 'package:ticket_app/screens/all_tickets.dart';
 class AppDoubleText extends StatelessWidget {
   final String bigText;
   final String smallText;
-  final VoidCallback? func;
+  final VoidCallback func;
 
   const AppDoubleText(
       {super.key, required this.bigText, required this.smallText, required this.func});
@@ -18,7 +18,7 @@ class AppDoubleText extends StatelessWidget {
       children: [
         Text(bigText, style: AppStyles.headlineStyle2),
         InkWell(
-          onTap: () => func,
+          onTap: func,
           child: Text(
             smallText,
             style: AppStyles.textStyle.copyWith(color: AppStyles.primaryColor),
