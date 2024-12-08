@@ -1,6 +1,7 @@
 import 'package:fluentui_icons/fluentui_icons.dart';
 import 'package:flutter/material.dart';
 import 'package:ticket_app/base/res/media.dart';
+import 'package:ticket_app/base/res/routes/app_routes.dart';
 import 'package:ticket_app/base/res/styles/app_styles.dart';
 import 'package:ticket_app/base/widgets/app_double_text.dart';
 import 'package:ticket_app/base/utils/all_json.dart';
@@ -89,7 +90,7 @@ class HomeScreen extends StatelessWidget {
                 AppDoubleText(
                   bigText: 'Hotels',
                   smallText: 'View all',
-                  func: () => Navigator.pushNamed(context, '/all_hotels'),
+                  func: () => Navigator.pushNamed(context, AppRoutes.allHotels),
                 ),
                 SingleChildScrollView(
                     scrollDirection: Axis.horizontal,
